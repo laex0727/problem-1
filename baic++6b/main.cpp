@@ -15,13 +15,13 @@ void ham_phuong_trinh_bat_nhat(float a, float b){
  }
 }
 //phuong trinh bat 2
-void ham_phuong_trinh_bat_hai(float a, float b){
+void ham_phuong_trinh_bat_hai(float a, float b, float c){
 
 if(a!=0){
 float vi_et;
  vi_et = a*a-4*(a*b);
  if (vi_et < 0){
-    cout << "phuong trinh bat 2 vo nghiem "<<endl;
+    cout << "phuong trinh bac 2 vo nghiem "<<endl;
      }
     else{
         if(vi_et == 0){
@@ -43,7 +43,7 @@ int main()
     float x,y, z;
     cin >> x >> y;
     cin >> z;
-//    ham_phuong_trinh_bat_nhat(x, y, z);
+    ham_phuong_trinh_bat_nhat(x, y);
     ham_phuong_trinh_bat_hai(x, y, z);
     return 0;
 }
